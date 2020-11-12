@@ -12,6 +12,7 @@
 
 ## Packages
 
+```
 pamac install \
     acpi_call \
     alacritty \
@@ -20,9 +21,10 @@ pamac install \
     picom \
     polybar \
     pulseaudio \
+    pulseaudio-alsa \
     rofi \
     sddm \
-    signal-desktop
+    signal-desktop \
     stow \
     thunar \
     tlp \
@@ -30,8 +32,12 @@ pamac install \
     ttf-roboto \
     ttf-roboto-mono \
     unzip \
-    vscode \
+    vscode
+```
 
+
+```
 pamac build \
     chili-sddm-theme \
     starship-bin \
+```
