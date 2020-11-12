@@ -1,0 +1,215 @@
+# Compositor
+exec_always picom
+
+# Polybar
+exec_always ~/.config/polybar/launch.sh
+
+# Font
+font pango:Fira Sans 12
+
+# Alt as mod
+set $mod Mod1
+
+# Mod as floating modifier
+floating_modifier $mod
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# Start a terminal
+bindsym $mod+Return exec alacritty
+
+# Rofi
+bindsym $mod+d exec rofi -show run
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+b split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# switch to workspace
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# make mod+tab cycle through workspaces
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# Cycle wallpapers and apply new colorscheme.
+# bindsym $mod+n exec "wal -i $HOME/wallpapers/inuse -o wal-set"; exec $HOME/.config/polybar/launch.sh
+bindsym $mod+n exec --no-startup-id wal -i $HOME/wallpapers
+
+set $bg-color            #2f343f
+set $inactive-bg-color   #2f343f
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+set $tb                           #ffdab922
+
+# class                     border  backgr. text indicator child_border
+client.focused              $tb     $tb     $fg  $bg       $tb
+client.focused_inactive     $tb     $tb     $fg  $bg       $tb
+client.unfocused            $tb     $tb     $fg  $bg       $tb
+client.urgent               $tb     $tb     $fg  $bg       $tb
+client.placeholder          $tb     $tb     $fg  $bg       $tb
+client.background           $tb
+
+
+# Media Keys
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 2%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 2%-
+bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl -p spotify play-pause
+bindsym XF86AudioNext exec playerctl -p spotify next
+bindsym XF86AudioPrev exec playerctl -p spotify previous
+
+font pango:lemon 0
+for_window [class=".*"] title_format "<span font='Artwiz Lime 0'> > %title</span>"
+
+for_window [class="^.*"] border pixel 0
+for_window [floating] border pixel 20
+for_window [tiling] border pixel 0
+for_window [class="kitty"] border pixel 20
+
+# Gaps
+gaps inner 30
+gaps outer 0
+
+# Focus_follows_mouse off
+new_window pixel 0
+smart_borders on
+
+#set workspace names
+set $workspace1 ""
+set $workspace2 "🎶"
+# set $workspace2 "⛧"
+set $workspace3 ""
+set $workspace4 "☥"
+set $workspace5 "☕"
+set $workspace6 "⚛"
+set $workspace7 "🐱"
+set $workspace8 ""
+
+#1 Terminals 
+#2 Mail 
+#3 Palemoon 
+#4 Thesis 
+#5 PDF 
+#6 Youtube 
+
+# Bar
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Add this to your .xinitrc or whatever file starts programs on startup.
+#exec --no-startup-id $HOME/.local/bin/wal -i "$(< "${HOME}/.cache/wal/wal")"
+
+#exec --no-startup-id xrdb ~/.Xresources
+exec --no-startup-id setxkbmap -layout us
+#exec --no-startup-id i3-msg 'workspace ; exec google-chrome-stable'
+#exec --no-startup-id i3-msg 'workspace 🎶; exec spotify'
+# exec --no-startup-id i3-msg 'workspace ☕; exec discord'
+# exec --no-startup-id i3-msg 'workspace ☕; exec urxvt -e weechat'
