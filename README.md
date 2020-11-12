@@ -34,12 +34,15 @@ pamac install \
     ttf-roboto \
     ttf-roboto-mono \
     unzip \
-    vscode
+    vscode \
+    wmname
 ```
 
 
 ```
 pamac build \
     chili-sddm-theme \
+    dotnet-sdk-bin \
+    rider \
     starship-bin \
 ```

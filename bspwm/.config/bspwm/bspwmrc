@@ -3,7 +3,7 @@
 picom &
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d web term code chat music 6 7 
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 bspc config border_width         5
 bspc config window_gap           37 
@@ -15,11 +15,13 @@ bspc config gapless_monocle      true
 bspc config focused_border_color    "#88C0D0"
 bspc config normal_border_color     "#3B4252"
 
-bspc rule -a Chromium desktop='^1'
-bspc rule -a Alacritty desktop='^2'
-bspc rule -a "code-oss" desktop='^3'
+bspc rule -a Alacritty desktop='^1'
+bspc rule -a Chromium desktop='^2'
+bspc rule -a code-oss desktop='^3'
+bspc rule -a jetbrains-rider desktop='^3'
 bspc rule -a Signal desktop='^4'
 
+wmname LG3D &
 xsetroot -cursor_name left_ptr &
 feh --bg-fill --no-fehbg ~/wallpapers/current.jpg &
 polybar top &
