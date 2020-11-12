@@ -1,10 +1,11 @@
 configuration {
-  modi: "run,drun,window";
-  width: 20;
-  font: "BlexMono Nerd Font 12";
+  display-drun: "run";
+  display-combi: "combi";
+	show-icons:  true;
+  width: 30;
+  font: "Roboto Mono 12";
   terminal: "alacritty";
   disable-history: false;
-  sidebar-mode: true;
   tokenize: true;
   m: "-5";
   line-margin: 2;
