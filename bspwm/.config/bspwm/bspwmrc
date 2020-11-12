@@ -12,8 +12,8 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc config focused_border_color    "#647fac"
-bspc config normal_border_color     "#97aec9"
+bspc config focused_border_color    "#88C0D0"
+bspc config normal_border_color     "#3B4252"
 
 xsetroot -cursor_name left_ptr &
 feh --bg-fill --no-fehbg ~/wallpapers/current.jpg &

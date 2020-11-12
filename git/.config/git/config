@@ -1,0 +1,7 @@
+[user]
+	name = Christoph Schmatzler
+	email = christoph@schmatzler.name
+	username = cschmatzler
+
+[push]
+	default = matching

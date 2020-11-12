@@ -1,15 +1,12 @@
 [colors]
-background = "#0F1212"
-foreground = "#E3E3E3"
-gray = "#363636"
-accent = "#f07f7f"
-transparent = "#00000000"
+background = "#3B4252"
+foreground = "#E5E9F0"
 
 [bar/top]
 width = 100%
 height = 35 
 offset-x = 0
-offset-y = -1 
+offset-y = -1
 ;bottom = true
 
 background = ${colors.background}
@@ -24,9 +21,9 @@ padding-right = 0
 module-margin-left = 0 
 module-margin-right = 0
 
-font-0 = Roboto:pixelsize=13;0
-font-1 = Font Awesome 5 Free:style=Solid:size=10;0
-font-2 = Font Awesome 5 Brands:style=Solid:size=10;0
+font-0 = Roboto:pixelsize=13;1
+font-1 = Font Awesome 5 Free:style=Solid:size=10;2
+font-2 = Font Awesome 5 Brands:style=Solid:size=10;2
 
 modules-left = bspwm
 modules-center = 
@@ -56,7 +53,8 @@ ws-icon-default = 
 format = <label-state> <label-mode>
 
 label-focused = %icon%
-label-focused-background = #88000000
+label-focused-background = #88C0D0
+label-focused-foreground = #434c5e
 label-focused-underline= #ddd
 label-focused-padding = 4
 
