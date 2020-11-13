@@ -19,6 +19,7 @@ pamac install \
     acpi_call \
     alacritty \
     chromium \
+    docker \
     pavucontrol \
     picom \
     polybar \
@@ -41,8 +42,19 @@ pamac install \
 
 ```
 pamac build \
+    aspnet-runtime-bin \
     chili-sddm-theme \
+    dotnet-host-bin \
+    dotnet-runtime-bin \
     dotnet-sdk-bin \
-    rider \
+    jetbrains-toolbox \
     starship-bin \
+    unifi
+```
+
+## Docker
+```
+sudo usermod -a -G docker cschmatzler
+sudo systemctl enable docker
+docker run -d -e PUID=1000 -e PGID=1000 -p 3478:3478/udp -p 10001:10001/udp -p 8080:8080 -p 8443:8443 -v ~/.unifi:/config ghcr.io/linuxserver/unifi-controller
 ```

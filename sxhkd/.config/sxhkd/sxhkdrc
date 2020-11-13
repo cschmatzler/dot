@@ -28,8 +28,11 @@ XF86MonBrightnessUp
 alt + d
 	rofi -show run
 
+Super_L
+	rofi -show run
+
 # file manager
-alt + f
+alt + e
 	thunar
 
 # make sxhkd reload its config
@@ -41,7 +44,7 @@ alt + Escape
 #
 
 # quit/restart bspwm
-alt + alt + {q,r}
+alt + super + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
