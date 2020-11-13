@@ -161,7 +161,7 @@ label =   %percentage%%
 type = internal/memory
 
 format-padding = 3
-label =   %gb_used%/%gb_free%
+label =   %gb_used% used %gb_free% free
 
 [module/temperature]
 type = internal/temperature
