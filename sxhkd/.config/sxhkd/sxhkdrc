@@ -126,8 +126,8 @@ alt + ctrl + shift + space
 #
 
 # expand a window by moving one of its side outward
-Super_R + {h,j,k,l}
-	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+#Super_R + {h,j,k,l}
+#	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
 alt + Super_R + shift + {h,j,k,l}

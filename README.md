@@ -18,6 +18,8 @@
 pamac install \
     acpi_call \
     alacritty \
+    bluez \
+    bluez-utils \
     chromium \
     docker \
     pavucontrol \

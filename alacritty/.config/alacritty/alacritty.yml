@@ -8,9 +8,6 @@ window:
         x: 25
         y: 15
 
-dpi:
-  x: 144
-  y: 144
 
 colors:
   primary:
