@@ -7,7 +7,7 @@ external=$(xrandr --query | grep 'DisplayPort-2')
 if echo $external | grep -q ' connected'; then
     xrandr --fb 6240x3510 \
         --output eDP --mode 1920x1080 --scale 1.25x1.25 --panning 2400x1350+0+0 \
-        --output DisplayPort-2 --mode 3840x2160 --rate 30.00 --scale 1.0001x1.0001 --pos 2400x0 
+        --output DisplayPort-2 --mode 3840x2160 --pos 2400x0
 
     bspc monitor eDP -d 1 2 3 4 5
     bspc monitor DisplayPort-2 -d 6 7 8 9 10

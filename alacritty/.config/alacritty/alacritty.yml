@@ -4,10 +4,10 @@ font:
   size: 8
 
 window:
-    padding:
-        x: 25
-        y: 15
-
+  padding:
+      x: 25
+      y: 15
+  dpi: 144
 
 colors:
   primary:

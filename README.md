@@ -22,11 +22,13 @@ pamac install \
     bluez-utils \
     chromium \
     docker \
+    jre-openjdk \
     pavucontrol \
     picom \
     polybar \
     pulseaudio \
     pulseaudio-alsa \
+    pulseaudio-bluetooth \
     rofi \
     sddm \
     signal-desktop \
@@ -50,6 +52,7 @@ pamac build \
     dotnet-runtime-bin \
     dotnet-sdk-bin \
     jetbrains-toolbox \
+    netstandard-targeting-pack-bin \
     starship-bin \
     unifi
 ```
