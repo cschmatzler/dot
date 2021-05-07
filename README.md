@@ -18,17 +18,18 @@
 pamac install \
     acpi_call \
     alacritty \
+    bat \
     bluez \
     bluez-utils \
     chromium \
     docker \
-    jre-openjdk \
+    exa \
+    nvim \
     pavucontrol \
     picom \
     polybar \
     pulseaudio \
     pulseaudio-alsa \
-    pulseaudio-bluetooth \
     rofi \
     sddm \
     signal-desktop \
@@ -39,22 +40,16 @@ pamac install \
     ttf-roboto \
     ttf-roboto-mono \
     unzip \
-    vscode \
-    wmname
+    vivaldi \
+    vivaldi-ffmpeg-codecs \
+    vscode 
 ```
 
 
 ```
 pamac build \
-    aspnet-runtime-bin \
     chili-sddm-theme \
-    dotnet-host-bin \
-    dotnet-runtime-bin \
-    dotnet-sdk-bin \
-    jetbrains-toolbox \
-    netstandard-targeting-pack-bin \
-    starship-bin \
-    unifi
+    spotify
 ```
 
 ## Docker
