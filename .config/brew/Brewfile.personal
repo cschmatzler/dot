@@ -1,0 +1,18 @@
+tap "fluxcd/tap"
+
+# Applications
+cask "1password"
+cask "affinity-photo"
+cask "busycontacts"
+cask "hazel"
+cask "hey"
+cask "plex"
+cask "signal"
+cask "tailscale"
+
+brew "cilium-cli"
+brew "fluxcd/tap/flux"
+brew "go-task"
+brew "hcloud"
+brew "packer"
+brew "tailscale", restart_service: true

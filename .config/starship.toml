@@ -1,0 +1,23 @@
+add_newline = true
+command_timeout = 750
+
+format = """
+$directory\
+$git_status\
+$git_branch\
+$kubernetes\
+$line_break\
+$character
+"""
+
+[git_branch]
+format = " [ $branch]($style) "
+
+[kubernetes]
+disabled = false
+format = '[ 󱃾  $context ]($style) '
+[kubernetes.context_aliases]
+'.*aws.*qa.*-orchestrator' = 'orchestrator-qa'
+'.*aws.*qa.*-main' = 'main-qa'
+'.*aws.*cp.*-orchestrator' = 'orchestrator-cp'
+'.*aws.*production.*-orchestrator' = 'orchestrator-production'

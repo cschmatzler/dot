@@ -1,0 +1,8 @@
+[tools]
+nodejs = 'latest'
+
+[alias.nodejs]
+lts-hydrogen = '18'
+
+[settings]
+experimental = true
