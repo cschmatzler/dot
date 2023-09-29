@@ -10,28 +10,28 @@ return {
     i(1),
     c(1, {
       t "",
-      t "label: "
+      t "label: ",
     }),
-    t ")"
+    t ")",
   }),
 
-	s("ec", {
-		t "use ExUnit.Case",
-		c(1, {
-			t "",
-			t ", async: true",
-		}),
-	}),
+  s("ec", {
+    t "use ExUnit.Case",
+    c(1, {
+      t "",
+      t ", async: true",
+    }),
+  }),
 
-	s("heex", {
-		t({'~H"""', "\t"}),
+  s("heex", {
+    t { '~H"""', "\t" },
     i(1),
-    t({"\t", '"""'})
-	}),
+    t { "\t", '"""' },
+  }),
 
   s("doc", {
-		t({'@doc """', "\t"}),
+    t { '@doc """', "\t" },
     i(1),
-    t({"\t", '"""'})
-  })
+    t { "\t", '"""' },
+  }),
 }
