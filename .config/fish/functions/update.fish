@@ -1,7 +1,7 @@
 function update --description 'Update everything'
   ~
   and echo "Pulling dotfiles..."
-  and chezmoi update
+  and yadm pull --rebase
 
   and echo "Updating Homebrew..."
   and brew update
