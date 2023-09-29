@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "Installing fish..."
+brew install fish
+
+echo "Select between bootstrapping (p)ersonal or (w)ork machine"
+options=("p" "w")
+select opt in "${options[@]}"; do
+  case "$REPLY" in
+    p) fish -c "bootstrap personal"; break;;
+    w) fish -c "bootstrap work"; break;;
+    *) echo "Invalid choice. Try again"; continue;;
+  esac
+done
