@@ -3,9 +3,8 @@ function update --description 'Update everything'
   and echo "Pulling dotfiles..."
   and yadm pull --rebase
 
-  and echo "Updating Homebrew..."
-  and brew update
-  and brew upgrade --greedy --fetch-head
+  and echo "Running bootstrap script..."
+  and bootstrap personal
 
   and echo "Updating fish..."
   and fisher update
