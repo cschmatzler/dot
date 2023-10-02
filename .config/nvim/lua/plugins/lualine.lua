@@ -1,13 +1,7 @@
 return {
   "nvim-lualine/lualine.nvim",
   dependencies = {
-    {
-      "stevearc/aerial.nvim",
-      dependencies = {
-        "nvim-tree/nvim-web-devicons",
-        "nvim-treesitter/nvim-treesitter",
-      },
-    },
+    "stevearc/aerial.nvim",
   },
   event = "VeryLazy",
   config = function()

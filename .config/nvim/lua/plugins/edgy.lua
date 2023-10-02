@@ -11,8 +11,9 @@ return {
     },
     right = {
       { ft = "nnn", title = "Files", size = { width = 0.3 } },
+      { ft = "arena", title = "Recent", size = { width = 0.3 } },
       { ft = "harpoon", title = "Harpoons", size = { width = 0.3 } },
-      { ft = "aerial", title = "Overview", size = { width = 0.2 } },
+      { ft = "aerial", title = "Overview", size = { width = 0.3 } },
       { ft = "neotest-summary", title = "Tests", size = { width = 0.4 } },
       { ft = "spectre_panel", title = "Spectre", size = { width = 0.4 } },
     },
