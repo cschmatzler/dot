@@ -5,13 +5,14 @@ return {
     "folke/trouble.nvim",
     "nvim-telescope/telescope-ui-select.nvim",
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+    { "nvim-telescope/telescope-frecency.nvim",   dependencies = { "kkharji/sqlite.lua" } },
   },
   cmd = { "Telescope" },
   keys = {
-    { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Find recent files" },
+    { "<leader>fr", "<cmd>Telescope frecency<cr>",                  desc = "Find recent files" },
     { "<leader>gb", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Grep buffer" },
-    { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
-    { "<leader>gp", "<cmd>Telescope live_grep<cr>", desc = "Grep in project" },
+    { "<leader>ff", "<cmd>Telescope find_files<cr>",                desc = "Find files" },
+    { "<leader>gp", "<cmd>Telescope live_grep<cr>",                 desc = "Grep in project" },
     {
       "<leader>gw",
       ":lua require('telescope.builtin').grep_string({ search = vim.fn.expand('<cword>')})<cr>",
@@ -37,18 +38,19 @@ return {
         initial_mode = "insert",
         selection_strategy = "reset",
         sorting_strategy = "ascending",
-        layout_strategy = "horizontal",
+        layout_strategy = "vertical",
         layout_config = {
           horizontal = {
             prompt_position = "top",
-            preview_width = 0.65,
+            preview_width = 0.5,
           },
           vertical = {
-            mirror = false,
+            prompt_position = "top",
+            mirror = true
           },
           width = 0.87,
           height = 0.80,
-          preview_cutoff = 120,
+          preview_cutoff = 10,
         },
         border = {},
         borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
@@ -76,14 +78,13 @@ return {
         },
       },
       extensions = {
-        gitmoji = {
-          action = function(entry)
-            vim.api.nvim_buf_set_text(0, 0, 0, 0, 0, { entry.value.value })
-          end,
+        frecency = {
+          show_scores = true,
         },
       },
     }
 
     require("telescope").load_extension "fzf"
+    require("telescope").load_extension "frecency"
   end,
 }

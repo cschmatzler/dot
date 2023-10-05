@@ -9,7 +9,6 @@ M.setup = function(_client, buffer)
   end, { buffer = buffer, desc = "Code action" })
   vim.keymap.set("n", "<leader>cf", function()
     vim.lsp.buf.format()
-    vim.cmd "TailwindSort"
   end, { buffer = buffer })
   vim.keymap.set("x", "<leader>cf", function()
     vim.lsp.buf.format()

@@ -7,6 +7,12 @@ return {
     local elixirls = require "elixir.elixirls"
 
     elixir.setup {
+      nextls = {
+        enable = true,
+        on_attach = function(client, bufnr)
+          require("config.lsp-keymap").setup(client, bufnr)
+        end,
+      },
       credo = {},
       elixirls = {
         enable = true,
