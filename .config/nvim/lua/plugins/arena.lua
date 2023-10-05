@@ -9,5 +9,7 @@ return {
       end,
     },
   },
-  config = true,
+  opts = {
+    max_items = 10
+  },
 }
