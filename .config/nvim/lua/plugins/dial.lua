@@ -3,7 +3,6 @@ return {
   config = function()
     vim.keymap.set("n", "<C-a>", function()
       require("dial.map").manipulate("increment", "normal")
-      require("aerial").open()
     end)
     vim.keymap.set("n", "<C-x>", function()
       require("dial.map").manipulate("decrement", "normal")
