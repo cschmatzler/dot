@@ -16,19 +16,17 @@ k9s:
     fullScreenLogs: false
     textWrap: false
     showTime: false
-  currentContext: admin@platform
-  currentCluster: platform
+  currentContext: colima
+  currentCluster: colima
   clusters:
-    colorful-pandas-prod:
+    colima:
       namespace:
         active: all
         lockFavorites: false
         favorites:
-        - networking
-        - all
         - default
       view:
-        active: pod
+        active: sensor
       featureGates:
         nodeShell: false
       shellPod:
@@ -47,28 +45,6 @@ k9s:
         lockFavorites: false
         favorites:
         - monitoring
-        - all
-        - default
-      view:
-        active: pod
-      featureGates:
-        nodeShell: false
-      shellPod:
-        image: busybox:1.35.0
-        command: []
-        args: []
-        namespace: default
-        limits:
-          cpu: 100m
-          memory: 100Mi
-        labels: {}
-      portForwardAddress: localhost
-    prod.colorful-pandas.com:
-      namespace:
-        active: all
-        lockFavorites: false
-        favorites:
-        - networking
         - all
         - default
       view:
