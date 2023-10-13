@@ -1,8 +1,8 @@
 return {
-  "echasnovski/mini.move",
-  event = "BufReadPost",
-  config = function()
-    require("mini.move").setup {
+  {
+    "echasnovski/mini.move",
+    event = "BufReadPost",
+    opts = {
       mappings = {
         left = "<M-Left>",
         right = "<M-Right>",
@@ -13,6 +13,6 @@ return {
         line_down = "<M-Down>",
         line_up = "<M-Up>",
       },
-    }
-  end,
+    },
+  },
 }
