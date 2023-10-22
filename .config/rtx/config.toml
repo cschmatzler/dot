@@ -1,5 +1,5 @@
 [tools]
-nodejs = 'latest'
+nodejs = '20.7.0'
 
 [alias.nodejs]
 lts-hydrogen = '18'
