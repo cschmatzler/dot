@@ -17,8 +17,8 @@ function bootstrap --description 'Bootstrap a new machine'
   cat $HOME/.config/brew/Brewfile.common $HOME/.config/brew/Brewfile.$argv[1] | brew bundle cleanup --force --file=-
   and cat $HOME/.config/brew/Brewfile.common $HOME/.config/brew/Brewfile.$argv[1] | brew bundle --file=-
 
-  echo "Installing global npm packages..."
-  npm install -g devmoji
+  echo "Installing runtimes..."
+  and rtx i
 
   echo "Configuring macOS..."
   defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool false
