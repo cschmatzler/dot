@@ -1,5 +1,6 @@
 [tools]
 nodejs = '20.7.0'
+rust = "1.73.0"
 
 [alias.nodejs]
 lts-hydrogen = '18'
