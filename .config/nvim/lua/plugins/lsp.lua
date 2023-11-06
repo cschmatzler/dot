@@ -3,8 +3,6 @@ return {
   ---@class PluginLspOpts
   opts = {
     ---@type lspconfig.options
-    servers = {
-      volar = {},
-    },
+    servers = {},
   },
 }
