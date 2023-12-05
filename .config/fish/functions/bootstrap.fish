@@ -10,15 +10,28 @@ function bootstrap --description 'Bootstrap a new machine'
     return '1'
   end
 
-  echo "Setting yadm config..."
-  yadm config class.local $argv[1]
+  and echo "Setting yadm config..."
+  and yadm config class.local $argv[1]
 
-  echo "Installing packages..."
-  cat $HOME/.config/brew/Brewfile.common $HOME/.config/brew/Brewfile.$argv[1] | brew bundle cleanup --force --file=-
+  and echo "Pulling dotfiles..."
+  and yadm pull --rebase
+
+  and echo "Installing packages..."
+  and cat $HOME/.config/brew/Brewfile.common $HOME/.config/brew/Brewfile.$argv[1] | brew bundle cleanup --force --file=-
   and cat $HOME/.config/brew/Brewfile.common $HOME/.config/brew/Brewfile.$argv[1] | brew bundle --file=-
 
-  echo "Installing runtimes..."
+  and echo "Updating fish..."
+  and fisher update
+  and fish_update_completions
+
+  and echo "Installing runtimes..."
   and rtx i
+
+  and echo "Updating nvim plugins..."
+  and nvim --headless "+Lazy! sync" +qa
+
+  and echo "Updating bat..."
+  and bat cache --build
 
   echo "Configuring macOS..."
   defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool false
