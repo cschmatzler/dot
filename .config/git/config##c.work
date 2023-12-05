@@ -1,7 +1,7 @@
 [user]
   name = Christoph Schmatzler
   email = christoph.schmatzler@phrase.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG4ziwKeMm5XHY2WEYlZK14M0lYcRAPzu66ONjVVoXGT
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG4ziwKeMm5XHY2WEYlZK14M0lYcRAPzu66ONjVVoXGT
 
 [core]
   editor = nvim
@@ -17,7 +17,7 @@
   format = ssh
 
 [gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 
 [fetch]
   prune = true
