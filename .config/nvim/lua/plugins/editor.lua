@@ -6,6 +6,12 @@ return {
       build = "make",
       config = function()
         require("telescope").load_extension("fzf")
+
+        return {
+          file_ignore_patterns = {
+            "target/**/*"
+          }
+        }
       end,
     },
   },

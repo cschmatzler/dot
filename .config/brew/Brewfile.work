@@ -4,6 +4,7 @@ cask "visual-studio-code"
 cask "zoom"
 
 brew "argo"
+brew "colima"
 brew "direnv"
 brew "kubectx"
 brew "kubernetes-cli"
