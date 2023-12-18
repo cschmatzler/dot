@@ -9,26 +9,22 @@ return {
 
         return {
           file_ignore_patterns = {
-            "target/**/*"
-          }
+            "target/**/*",
+          },
         }
       end,
     },
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
-    enabled = false,
-  },
-  {
-    "luukvbaal/nnn.nvim",
-    cmd = { "NnnExplorer", "NnnPicker" },
-    keys = {
-      { "<leader>e", "<cmd>NnnPicker %:p<cr>", desc = "nnn" },
-    },
     opts = {
-      picker = {
-        cmd = "nnn -H",
-        fullscreen = false,
+      event_handlers = {
+        {
+          event = "file_opened",
+          handler = function(file_path)
+            require("neo-tree.command").execute({ action = "close" })
+          end,
+        },
       },
     },
   },
