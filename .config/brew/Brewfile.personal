@@ -11,5 +11,7 @@ cask "signal"
 cask "tailscale"
 
 brew "go-task"
+brew "gmp"
 brew "hcloud"
+brew "libyaml"
 brew "tailscale", restart_service: true
