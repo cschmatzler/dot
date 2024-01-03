@@ -25,7 +25,7 @@ function bootstrap --description 'Bootstrap a new machine'
   and fish_update_completions
 
   and echo "Installing runtimes..."
-  and rtx i
+  and mise i
 
   and echo "Updating nvim plugins..."
   and nvim --headless "+Lazy! sync" +qa

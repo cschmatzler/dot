@@ -18,5 +18,5 @@ if status is-interactive
   starship init fish | source
   zoxide init fish --hook prompt | source
   atuin init fish --disable-up-arrow --disable-ctrl-r | source
-  rtx activate fish | source
+  mise activate fish | source
 end
