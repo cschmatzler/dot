@@ -1,0 +1,6 @@
+cargo-binstall
+cargo-machete
+cargo-nextest
+cargo-watch
+sqlx-cli
+systemfd
