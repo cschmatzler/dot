@@ -16,8 +16,3 @@ format = " [ $branch]($style) "
 [kubernetes]
 disabled = false
 format = '[ 󱃾  $context ]($style) '
-[kubernetes.context_aliases]
-'.*aws.*qa.*-orchestrator' = 'orchestrator-qa'
-'.*aws.*qa.*-main' = 'main-qa'
-'.*aws.*cp.*-orchestrator' = 'orchestrator-cp'
-'.*aws.*production.*-orchestrator' = 'orchestrator-production'
