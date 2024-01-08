@@ -3,6 +3,3 @@ nodejs = '21.4.0'
 
 [alias.nodejs]
 lts-hydrogen = '18'
-
-[settings]
-experimental = true
