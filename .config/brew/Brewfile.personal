@@ -1,4 +1,4 @@
-tap "fluxcd/tap"
+tap "render-oss/render"
 
 # Applications
 cask "1password-cli"
@@ -8,10 +8,8 @@ cask "hey"
 cask "orbstack"
 cask "plex"
 cask "signal"
-cask "tailscale"
 
-brew "go-task"
-brew "gmp"
-brew "hcloud"
-brew "libyaml"
-brew "tailscale", restart_service: true
+# CLI Tools
+
+brew "neonctl"
+brew "render"

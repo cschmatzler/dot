@@ -2,17 +2,8 @@ add_newline = true
 command_timeout = 750
 
 format = """
-$directory\
-$git_status\
-$git_branch\
-$kubernetes\
-$line_break\
-$character
+$directory$git_status$git_branch$line_break$character
 """
 
 [git_branch]
 format = " [ $branch]($style) "
-
-[kubernetes]
-disabled = false
-format = '[ 󱃾  $context ]($style) '

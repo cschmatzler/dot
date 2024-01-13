@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-TARGET=$(fd -t d --exact-depth 1 . $HOME/personal $HOME/dev |
-  sed "s~$HOME/~~" |
-  fzf --prompt "project > ")
-
-TAB_NAME=$(echo $TARGET)
-kitty @ focus-tab --match title:$TAB_NAME 2>/dev/null || kitty @ launch --type tab --tab-title $TAB_NAME $TARGET
-

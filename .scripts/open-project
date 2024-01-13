@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+TARGET=$(fd -t d --exact-depth 1 . $HOME/personal $HOME/dev |
+  sed "s~$HOME/~~" |
+  fzf --prompt "project > ")
+
+wezterm cli spawn --cwd $HOME/$TARGET
