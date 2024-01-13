@@ -26,6 +26,7 @@ return {
 			mods = "SHIFT|CTRL",
 			action = wezterm.action.CloseCurrentPane({ confirm = false }),
 		},
+		{ key = "w", mods = "SHIFT|CTRL|ALT", action = wezterm.action.CloseCurrentTab({ confirm = false }) },
 		{ key = "LeftArrow", mods = "SHIFT|CTRL", action = wezterm.action.ActivateTabRelative(-1) },
 		{ key = "RightArrow", mods = "SHIFT|CTRL", action = wezterm.action.ActivateTabRelative(1) },
 		{ key = "]", mods = "SHIFT|CTRL", action = wezterm.action.ActivatePaneDirection("Left") },
