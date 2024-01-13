@@ -28,6 +28,8 @@ return {
 		},
 		{ key = "LeftArrow", mods = "SHIFT|CTRL", action = wezterm.action.ActivateTabRelative(-1) },
 		{ key = "RightArrow", mods = "SHIFT|CTRL", action = wezterm.action.ActivateTabRelative(1) },
+		{ key = "]", mods = "SHIFT|CTRL", action = wezterm.action.ActivatePaneDirection("Left") },
+		{ key = "[", mods = "SHIFT|CTRL", action = wezterm.action.ActivatePaneDirection("Right") },
 		{
 			key = "p",
 			mods = "SHIFT|CTRL",
