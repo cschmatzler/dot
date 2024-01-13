@@ -8,8 +8,10 @@ return {
 	font_size = 17,
 	line_height = 1.2,
 	window_padding = {
-		left = 64,
-		right = 0,
+		left = 48,
+		right = 48,
+		bottom = 0,
+		top = 0,
 	},
 	use_fancy_tab_bar = false,
 	tab_max_width = 64,
