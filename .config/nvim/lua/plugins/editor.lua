@@ -18,6 +18,15 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
+		  -- Always sort by name, not by type
+      sort_function = function(a, b)
+        return a.path < b.path
+      end,
+      filesystem = {
+        filtered_items = {
+          hide_dotfiles = false,
+        },
+      },
       event_handlers = {
         {
           event = "file_opened",
