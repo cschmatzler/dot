@@ -5,7 +5,7 @@ return {
 	check_for_updates = false,
 	default_prog = { "/opt/homebrew/bin/fish", "-l" },
 	color_scheme = "Catppuccin Latte",
-	font = wezterm.font("FiraCode Nerd Font Mono"),
+	font = wezterm.font({ family = "FiraCode Nerd Font Mono", harfbuzz_features = { "calt=0", "clig=0", "liga=0" } }),
 	font_size = 17,
 	line_height = 1.3,
 	window_padding = {
