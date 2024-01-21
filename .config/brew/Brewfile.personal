@@ -1,4 +1,4 @@
-tap "render-oss/render"
+tap "planetscale/tap"
 
 # Applications
 cask "1password-cli"
@@ -12,5 +12,7 @@ cask "signal"
 
 # CLI Tools
 
-brew "neonctl"
-brew "render"
+brew "flyctl"
+brew "hcloud"
+brew "mysql-client"
+brew "planetscale/tap/pscale"
