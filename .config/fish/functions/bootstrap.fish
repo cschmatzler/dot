@@ -33,6 +33,10 @@ function bootstrap --description 'Bootstrap a new machine'
   and echo "Updating bat..."
   and bat cache --build
 
+  and echo "Linking docker plugins..."
+	and mkdir -p ~/.docker/cli-plugins
+  and ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose $HOME/.docker/cli-plugins/docker-compose
+
   echo "Configuring macOS..."
   defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool false
   defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true

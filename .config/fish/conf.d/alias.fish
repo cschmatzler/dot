@@ -20,8 +20,8 @@ alias vim "nvim"
 
 abbr -a -g c 'clear'
 
-abbr -a -g dcu 'docker-compose up -d'
-abbr -a -g dcud 'docker-compose -f docker-compose.dev.yml up -d'
+abbr -a -g dcu 'docker compose up -d'
+abbr -a -g dcud 'docker compose -f docker-compose.dev.yml up -d'
 
 # git
 # ---
