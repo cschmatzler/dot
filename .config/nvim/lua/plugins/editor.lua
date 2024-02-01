@@ -18,7 +18,7 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
-		  -- Always sort by name, not by type
+      -- Always sort by name, not by type
       sort_function = function(a, b)
         return a.path < b.path
       end,
@@ -45,6 +45,7 @@ return {
         json = { "prettier" },
         typescript = { "prettier" },
         typescriptreact = { "prettier" },
+        vue = { "prettier" },
       },
     },
   },
