@@ -4,6 +4,7 @@ tap "noborus/tap"
 
 # Applications
 cask "1password"
+cask "arc"
 cask "bartender"
 cask "busycal"
 cask "dash"
