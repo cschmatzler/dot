@@ -30,10 +30,20 @@ return {
       event_handlers = {
         {
           event = "file_opened",
-          handler = function(file_path)
+          handler = function()
             require("neo-tree.command").execute({ action = "close" })
           end,
         },
+      },
+    },
+  },
+  {
+    "mbbill/undotree",
+    keys = {
+      {
+        "<leader>cu",
+        vim.cmd.UndotreeToggle,
+        desc = "Undotree",
       },
     },
   },
@@ -43,8 +53,6 @@ return {
       formatters_by_ft = {
         astro = { "prettier" },
         json = { "prettier" },
-        typescript = { "prettier" },
-        typescriptreact = { "prettier" },
         vue = { "prettier" },
       },
     },
