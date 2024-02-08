@@ -19,7 +19,7 @@ function bootstrap --description 'Bootstrap a new machine'
   and echo "Installing packages..."
   and cat $HOME/.config/brew/Brewfile.common $HOME/.config/brew/Brewfile.$argv[1] | brew bundle cleanup --force --file=-
   and cat $HOME/.config/brew/Brewfile.common $HOME/.config/brew/Brewfile.$argv[1] | brew bundle --file=-
-	and cat brew upgrade --fetch-HEAD
+	and brew upgrade --fetch-HEAD
 
   and echo "Updating fish..."
   and fisher update
