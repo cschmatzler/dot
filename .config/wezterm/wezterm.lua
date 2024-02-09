@@ -3,6 +3,7 @@ local keymaps = require("keymaps")
 
 return {
 	check_for_updates = false,
+	front_end = "WebGpu",
 	default_prog = { "/opt/homebrew/bin/fish", "-l" },
 	color_scheme = "Catppuccin Latte",
 	font = wezterm.font({ family = "FiraCode Nerd Font Mono", harfbuzz_features = { "calt=0", "clig=0", "liga=0" } }),
