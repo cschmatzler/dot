@@ -1,4 +1,4 @@
 return {
-  -- Disable built-in plugins
-  { "akinsho/bufferline.nvim", enabled = false },
+	-- Disable built-in plugins
+	{ "akinsho/bufferline.nvim", enabled = false },
 }
