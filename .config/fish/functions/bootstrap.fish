@@ -22,11 +22,11 @@ function bootstrap --description 'Bootstrap a new machine'
 	and brew upgrade --fetch-HEAD
 
   and echo "Updating fish..."
-  and fisher update
-  and fish_update_completions
+  and fish -c "fisher update"
+  and fish -c "fish_update_completions"
 
   and echo "Installing runtimes..."
-  and mise i
+  and fish -c "mise i"
 
   and echo "Updating nvim plugins..."
   and nvim --headless "+Lazy! sync" +qa
