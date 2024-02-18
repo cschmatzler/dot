@@ -4,15 +4,12 @@ tap "planetscale/tap"
 cask "1password-cli"
 cask "affinity-photo"
 cask "busycontacts"
-cask "hey"
+cask "linear-linear"
 cask "orbstack"
 cask "plex"
 cask "postman"
 cask "signal"
+cask "tailscale"
 
 # CLI Tools
-
-brew "flyctl"
 brew "hcloud"
-brew "mysql-client"
-brew "planetscale/tap/pscale"
