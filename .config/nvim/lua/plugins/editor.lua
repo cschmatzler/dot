@@ -1,6 +1,4 @@
 return {
-	-- TODO: Remove when https://github.com/rcarriga/nvim-notify/pull/253 gets merged.
-	{ "ls-devs/nvim-notify" },
 	{
 		"nvim-telescope/telescope.nvim",
 		dependencies = {
