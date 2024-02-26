@@ -3,6 +3,7 @@ tap "homebrew/cask-fonts"
 tap "noborus/tap"
 
 # Applications
+brew "orbstack"
 cask "1password"
 cask "arc"
 cask "bartender"
@@ -51,4 +52,5 @@ brew "sd"
 brew "starship"
 brew "wget"
 brew "yadm"
+brew "yazi"
 brew "zoxide"
