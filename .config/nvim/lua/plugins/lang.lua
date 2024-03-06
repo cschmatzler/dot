@@ -17,6 +17,16 @@ return {
 		},
 	},
 
+	-- UnoCSS
+	{
+		"neovim/nvim-lspconfig",
+		opts = {
+			servers = {
+				unocss = {},
+			},
+		},
+	},
+
 	-- Markdown
 	{
 		"mfussenegger/nvim-lint",

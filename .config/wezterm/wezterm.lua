@@ -8,7 +8,7 @@ return {
 	color_scheme = "Catppuccin Latte",
 	font = wezterm.font({ family = "FiraCode Nerd Font Mono", harfbuzz_features = { "calt=0", "clig=0", "liga=0" } }),
 	font_size = 17,
-	line_height = 1.3,
+	line_height = 1.35,
 	window_padding = {
 		left = 48,
 		right = 48,
