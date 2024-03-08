@@ -1,6 +1,2 @@
-[tools]
-nodejs = "21.4.0"
-ruby = "3.3.0"
-
 [alias.nodejs]
 lts-hydrogen = "18"
