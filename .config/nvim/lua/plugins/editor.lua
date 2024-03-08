@@ -63,6 +63,10 @@ return {
 				desc = "neogit",
 			},
 		},
-		config = true,
+		opts = {
+      integrations = {
+        diffview = true,
+      },
+    },
 	},
 }
