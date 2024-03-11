@@ -1,0 +1,25 @@
+IMAPAccount fastmail
+  Host imap.fastmail.com
+  Port 993
+  SSLType IMAPS
+  SSLVersions TLSv1.2
+  AuthMechs Login
+  User christoph@medium.place
+  PassCmd "op read op://Private/Fastmail/mbsync"
+
+IMAPStore fastmail-remote
+  Account fastmail
+
+MaildirStore fastmail-local
+  Path ~/.mail/fastmail/
+  Inbox ~/.mail/fastmail/Inbox
+  Subfolders Verbatim
+  Trash Trash
+
+Channel fastmail-folders
+  Far :fastmail-remote:
+  Near :fastmail-local:
+  Patterns *
+  SyncState *
+  Create Both
+  Expunge Both

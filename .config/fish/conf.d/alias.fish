@@ -1,6 +1,7 @@
 alias .. "cd .."
 alias ... "cd ../.."
 
+alias a "aerc"
 alias b "bat"
 alias d "docker"
 alias e "eza"
@@ -15,6 +16,8 @@ alias t "task"
 alias tf "terraform"
 alias v "nvim"
 alias vim "nvim"
+
+alias mbsync="mbsync -c \"$XDG_CONFIG_HOME/isync/mbsyncrc\""
 
 abbr -a -g c 'clear'
 
