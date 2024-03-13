@@ -48,7 +48,7 @@ function bootstrap --description 'Bootstrap a new machine'
   defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
   defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
   defaults write NSGlobalDomain AppleFontSmoothing -int 2
-  defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+  defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
   defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
   defaults write com.apple.screencapture location -string "~/Downloads"
   defaults write com.apple.screencapture type -string "png"
@@ -72,7 +72,7 @@ function bootstrap --description 'Bootstrap a new machine'
   defaults write com.apple.dock autohide -bool true
   chflags nohidden ~/Library
   defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
-  defaults write com.apple.dock tilesize -int 45
+  defaults write com.apple.dock tilesize -int 35
   defaults write com.apple.dock magnification -int 1
   defaults write com.apple.dock largesize -int 85
   defaults write com.apple.dock expose-animation-duration -float 0.15
