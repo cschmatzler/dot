@@ -21,7 +21,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.yaml" },
     { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.test.core" },
-    { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     { import = "plugins" },
   },
@@ -30,7 +29,7 @@ require("lazy").setup({
     version = false,
   },
   install = {},
-  checker = { enabled = true },
+  checker = { enabled = false },
   performance = {
     rtp = {
       disabled_plugins = {
