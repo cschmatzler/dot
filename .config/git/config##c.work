@@ -49,3 +49,6 @@
   plus-empty-line-marker-style  = syntax "#aecde6"
   line-numbers-plus-style       = "#399a96"
   line-numbers-zero-style       = "#a8aecb"
+
+[rerere]
+	enabled = true
