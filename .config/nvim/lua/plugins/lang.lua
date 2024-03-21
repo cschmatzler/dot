@@ -16,6 +16,35 @@ return {
       },
     },
   },
+  -- Svelte
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, opts)
+      if type(opts.ensure_installed) == "table" then
+        vim.list_extend(opts.ensure_installed, { "svelte" })
+      end
+    end,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        svelte = {
+          settings = {
+            svelte = {
+              plugin = {
+                svelte = {
+                  format = {
+                    enable = false,
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
   -- Markdown
   {
     "mfussenegger/nvim-lint",

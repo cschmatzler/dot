@@ -4,6 +4,7 @@ local keymaps = require("keymaps")
 return {
 	check_for_updates = false,
 	front_end = "WebGpu",
+	max_fps = 120,
 	default_prog = { "/opt/homebrew/bin/fish", "-l" },
 	color_scheme = "Catppuccin Latte",
 	font = wezterm.font({ family = "FiraCode Nerd Font Mono", harfbuzz_features = { "calt=0", "clig=0", "liga=0" } }),
@@ -16,7 +17,7 @@ return {
 		top = 0,
 	},
 	use_fancy_tab_bar = false,
-	tab_max_width = 64,
+	tab_max_width = 32,
 	hide_tab_bar_if_only_one_tab = true,
 	native_macos_fullscreen_mode = false,
 	keys = keymaps,
