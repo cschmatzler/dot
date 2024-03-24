@@ -1,4 +1,6 @@
 return {
+  -- Elixir
+  {},
   -- Vue
   {
     "nvim-treesitter/nvim-treesitter",
@@ -29,19 +31,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        svelte = {
-          settings = {
-            svelte = {
-              plugin = {
-                svelte = {
-                  format = {
-                    enable = false,
-                  },
-                },
-              },
-            },
-          },
-        },
+        svelte = {},
       },
     },
   },

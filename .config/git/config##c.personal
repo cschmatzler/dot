@@ -34,6 +34,16 @@
 
 [diff]
   colorMoved = default
+  tool = difftastic
+
+[difftool]
+  prompt = false
+
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+  difftool = true
 
 [delta]
   navigate = true
