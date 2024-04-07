@@ -3,6 +3,7 @@ local opt = vim.opt
 
 g.autoformat = true
 g.root_spec = { ".git", "lsp", "cwd" }
+g.lazygit_config = false
 opt.formatoptions = "jcroqlnt"
 opt.textwidth = 110
 opt.colorcolumn = "111"
