@@ -1,6 +1,16 @@
 return {
   -- Elixir
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, opts)
+      vim.list_extend(opts.ensure_installed, {
+        "elixir",
+        "heex",
+        "eex",
+      })
+    end,
+  },
+  {
     "elixir-tools/elixir-tools.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -23,6 +33,18 @@ return {
         elixirls = { enable = false },
       })
     end,
+  },
+  {
+    "nvim-neotest/neotest",
+    optional = true,
+    dependencies = {
+      "jfpedroza/neotest-elixir",
+    },
+    opts = {
+      adapters = {
+        ["neotest-elixir"] = {},
+      },
+    },
   },
   -- Svelte
   {
