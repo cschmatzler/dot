@@ -17,6 +17,7 @@ cask "wezterm"
 mas "Yubico Authenticator", id: 1497506650
 
 # Fonts
+cask "font-iosevka-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 
