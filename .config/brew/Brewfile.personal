@@ -4,10 +4,10 @@ tap "planetscale/tap"
 cask "1password-cli"
 cask "affinity-photo"
 cask "busycontacts"
+cask "daisydisk"
 cask "linear-linear"
 cask "plex"
 cask "postman"
-cask "signal"
 cask "tailscale"
 
 # CLI Tools
