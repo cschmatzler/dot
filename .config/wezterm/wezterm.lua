@@ -18,7 +18,7 @@ return {
 	},
 	use_fancy_tab_bar = false,
 	tab_max_width = 32,
-	hide_tab_bar_if_only_one_tab = false,
 	native_macos_fullscreen_mode = true,
+	disable_default_key_bindings = true,
 	keys = keymaps,
 }

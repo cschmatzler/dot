@@ -1,20 +1,21 @@
 local wezterm = require("wezterm")
 
 return {
-	{ key = "Enter", mods = "SHIFT|CTRL", action = wezterm.action.SplitHorizontal({}) },
-	{ key = "w", mods = "SHIFT|CTRL", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
-	{ key = "w", mods = "SHIFT|CTRL|ALT", action = wezterm.action.CloseCurrentTab({ confirm = false }) },
-	{ key = "LeftArrow", mods = "SHIFT|CTRL", action = wezterm.action.ActivateTabRelative(-1) },
-	{ key = "RightArrow", mods = "SHIFT|CTRL", action = wezterm.action.ActivateTabRelative(1) },
-	{ key = "h", mods = "SHIFT|CTRL", action = wezterm.action.ActivateTabRelative(-1) },
-	{ key = "l", mods = "SHIFT|CTRL", action = wezterm.action.ActivateTabRelative(1) },
-	{ key = "[", mods = "SHIFT|CTRL", action = wezterm.action.ActivatePaneDirection("Left") },
-	{ key = "]", mods = "SHIFT|CTRL", action = wezterm.action.ActivatePaneDirection("Right") },
+	{ key = "Enter", mods = "ALT", action = wezterm.action.SplitHorizontal({}) },
+	{ key = "w", mods = "ALT", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
+	{ key = "LeftArrow", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
+	{ key = "RightArrow", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
+	{ key = "h", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
+	{ key = "l", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
+	{ key = "[", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Left") },
+	{ key = "]", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Right") },
+	{ key = "t", mods = "ALT", action = wezterm.action.SpawnTab("CurrentPaneDomain") },
 	{
 		key = "p",
-		mods = "SHIFT|CTRL",
+		mods = "ALT",
 		action = wezterm.action.SpawnCommandInNewTab({
 			args = { "/opt/homebrew/bin/fish", "-l", "-c ~/.scripts/open-project" },
 		}),
 	},
+	{ key = "p", mods = "SHIFT|ALT", action = wezterm.action.ActivateCommandPalette },
 }

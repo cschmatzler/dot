@@ -19,6 +19,7 @@ return {
     config = function()
       require("elixir").setup({
         nextls = {
+          tag = "v0.20.2",
           enable = true,
           spitfire = true,
           init_options = {
@@ -30,7 +31,7 @@ return {
           },
         },
         credo = {},
-        elixirls = { enable = false },
+        elixirls = { enable = false, tag = "v0.20.0" },
       })
     end,
   },
@@ -71,5 +72,14 @@ return {
         markdown = {},
       },
     },
+  },
+  -- KDL
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, opts)
+      vim.list_extend(opts.ensure_installed, {
+        "kdl",
+      })
+    end,
   },
 }
