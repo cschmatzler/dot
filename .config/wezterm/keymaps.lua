@@ -1,21 +1,23 @@
-local wezterm = require("wezterm")
+local action = require("wezterm").action
 
 return {
-	{ key = "Enter", mods = "ALT", action = wezterm.action.SplitHorizontal({}) },
-	{ key = "w", mods = "ALT", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
-	{ key = "LeftArrow", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
-	{ key = "RightArrow", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
-	{ key = "h", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
-	{ key = "l", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
-	{ key = "[", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Left") },
-	{ key = "]", mods = "ALT", action = wezterm.action.ActivatePaneDirection("Right") },
-	{ key = "t", mods = "ALT", action = wezterm.action.SpawnTab("CurrentPaneDomain") },
+	{ key = "c", mods = "SUPER", action = action.CopyTo("Clipboard") },
+	{ key = "v", mods = "SUPER", action = action.PasteFrom("Clipboard") },
+	{ key = "Enter", mods = "ALT", action = action.SplitHorizontal({}) },
+	{ key = "w", mods = "ALT", action = action.CloseCurrentPane({ confirm = false }) },
+	{ key = "LeftArrow", mods = "ALT", action = action.ActivateTabRelative(-1) },
+	{ key = "RightArrow", mods = "ALT", action = action.ActivateTabRelative(1) },
+	{ key = "h", mods = "ALT", action = action.ActivateTabRelative(-1) },
+	{ key = "l", mods = "ALT", action = action.ActivateTabRelative(1) },
+	{ key = "[", mods = "ALT", action = action.ActivatePaneDirection("Left") },
+	{ key = "]", mods = "ALT", action = action.ActivatePaneDirection("Right") },
+	{ key = "t", mods = "ALT", action = action.SpawnTab("CurrentPaneDomain") },
 	{
 		key = "p",
 		mods = "ALT",
-		action = wezterm.action.SpawnCommandInNewTab({
+		action = action.SpawnCommandInNewTab({
 			args = { "/opt/homebrew/bin/fish", "-l", "-c ~/.scripts/open-project" },
 		}),
 	},
-	{ key = "p", mods = "SHIFT|ALT", action = wezterm.action.ActivateCommandPalette },
+	{ key = "p", mods = "SHIFT|ALT", action = action.ActivateCommandPalette },
 }
