@@ -11,29 +11,18 @@ return {
     end,
   },
   {
-    "elixir-tools/elixir-tools.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-    event = { "BufReadPre", "BufNewFile" },
-    config = function()
-      require("elixir").setup({
-        nextls = {
-          tag = "v0.20.2",
-          enable = true,
-          spitfire = true,
-          init_options = {
-            experimental = {
-              completions = {
-                enable = true,
-              },
-            },
-          },
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        lexical = {
+          filetypes = { "elixir", "eelixir", "heex" },
+          cmd = { "/Users/christoph/dev/lexical/_build/dev/package/lexical/bin/start_lexical.sh" },
+          root_dir = function(fname)
+            return require("lspconfig").util.root_pattern("mix.exs", ".git")(fname) or vim.loop.os_homedir()
+          end,
         },
-        credo = {},
-        elixirls = { enable = false, tag = "v0.20.0" },
-      })
-    end,
+      },
+    },
   },
   {
     "nvim-neotest/neotest",
