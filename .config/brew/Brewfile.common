@@ -49,7 +49,7 @@ brew "lazygit"
 brew "libyaml"
 brew "mas"
 brew "mise"
-brew "neovim"
+brew "neovim", args: ["HEAD"]
 brew "noborus/tap/ov"
 brew "notmuch"
 brew "openssh"
