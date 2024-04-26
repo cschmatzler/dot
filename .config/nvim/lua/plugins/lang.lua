@@ -16,7 +16,7 @@ return {
       servers = {
         lexical = {
           filetypes = { "elixir", "eelixir", "heex" },
-          cmd = { "/Users/christoph/dev/lexical/_build/dev/package/lexical/bin/start_lexical.sh" },
+          cmd = { "lexical" },
           root_dir = function(fname)
             return require("lspconfig").util.root_pattern("mix.exs", ".git")(fname) or vim.loop.os_homedir()
           end,
@@ -36,20 +36,20 @@ return {
       },
     },
   },
-  -- Svelte
   {
-    "nvim-treesitter/nvim-treesitter",
-    opts = function(_, opts)
-      if type(opts.ensure_installed) == "table" then
-        vim.list_extend(opts.ensure_installed, { "svelte" })
-      end
-    end,
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        elixir = { "rustywind" },
+        heex = { "rustywind" },
+      },
+    },
   },
   {
-    "neovim/nvim-lspconfig",
+    "williamboman/mason.nvim",
     opts = {
-      servers = {
-        svelte = {},
+      ensure_installed = {
+        "rustywind",
       },
     },
   },
