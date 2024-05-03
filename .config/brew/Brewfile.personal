@@ -1,6 +1,7 @@
 tap "planetscale/tap"
 
 # Applications
+cask "cleanshot"
 cask "1password-cli"
 cask "affinity-photo"
 cask "busycontacts"

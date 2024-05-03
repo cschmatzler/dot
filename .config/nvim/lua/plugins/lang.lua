@@ -5,10 +5,10 @@ return {
     opts = {
       servers = {
         emmet_language_server = {
-          filetypes = { "elixir", "heex" },
-        },
-      },
-    },
+          filetypes = { "elixir", "heex" }
+        }
+      }
+      }
   },
   -- Elixir
   {

@@ -1,35 +1,36 @@
 alias .. "cd .."
 alias ... "cd ../.."
 
-alias a "aerc"
-alias b "bat"
-alias d "docker"
-alias e "eza"
+alias a aerc
+alias b bat
+alias d docker
+alias e eza
 alias el "eza --long"
 alias et "eza --tree"
-alias k "kubectl"
-alias kx "kubectx"
-alias ld "lazydocker"
-alias lg "lazygit"
-alias m "mise"
-alias t "task"
-alias tf "terraform"
-alias v "nvim"
-alias vim "nvim"
+alias k kubectl
+alias kx kubectx
+alias ld lazydocker
+alias lg lazygit
+alias m mise
+alias t task
+alias tf terraform
+alias v nvim
+alias vim nvim
 
-alias mbsync="mbsync -c \"$XDG_CONFIG_HOME/isync/mbsyncrc\""
+abbr -a -g ta "task app:"
+abbr -a -g tp "task platform:"
 
-abbr -a -g c 'clear'
+abbr -a -g c clear
 
-abbr -a -g dcu 'docker compose up -d'
-abbr -a -g dcud 'docker compose -f docker-compose.dev.yml up -d'
+abbr -a -g dcu "docker compose up -d"
+abbr -a -g dcud "docker compose -f docker-compose.dev.yml up -d"
 
 # git
 # ---
 set _git_log_oneline_format "%C(green)%h%C(reset) %s%C(red)%d%C(reset)%n"
 set _git_log_medium_format "%C(bold)Commit:%C(reset) %C(green)%H%C(red)%d%n%C(bold)Author:%C(reset) %C(cyan)%an <%ae>%n%C(bold)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B"
 
-alias g "git"
+alias g git
 
 # Branch
 alias gb "git branch"
@@ -37,8 +38,8 @@ alias gbc "git switch -c"
 alias gbs "git switch"
 
 # Log
-alias gl "git log --topo-order --pretty=format:'$_git_log_medium_format'"
-alias glo "git log --topo-order --pretty=format:'$_git_log_oneline_format'"
+alias gl "git log --topo-order --pretty=format:"$_git_log_medium_format""
+alias glo "git log --topo-order --pretty=format:"$_git_log_oneline_format""
 
 # Fetch
 alias gf "git fetch"

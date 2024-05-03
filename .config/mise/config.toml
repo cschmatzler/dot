@@ -1,2 +1,5 @@
 [alias.nodejs]
 lts-hydrogen = "18"
+
+[tools]
+node = "22"
