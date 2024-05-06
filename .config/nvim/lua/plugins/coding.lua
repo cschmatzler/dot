@@ -41,19 +41,13 @@ return {
     end,
   },
   {
-    "echasnovski/mini.move",
-    event = "BufReadPost",
-    opts = {
-      mappings = {
-        left = "<C-Left>",
-        right = "<C-Right>",
-        down = "<C-Down>",
-        up = "<C-Up>",
-        line_left = "<C-Left>",
-        line_right = "<C-Right>",
-        line_down = "<C-Down>",
-        line_up = "<C-Up>",
-      },
+    "kdheepak/lazygit.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    keys = {
+      { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
     },
-  },
+    config = function()
+      vim.api.nvim_set_hl(0, "LazyGitBorder", { fg = "#1e66f5" })
+    end
+  }
 }
