@@ -8,8 +8,8 @@ return {
 	default_prog = { "/opt/homebrew/bin/fish", "-l" },
 	color_scheme = "Catppuccin Latte",
 	font = wezterm.font({ family = "Iosevka Nerd Font", harfbuzz_features = { "calt=0", "clig=0", "liga=0" } }),
-	font_size = 18,
-	line_height = 1.3,
+	font_size = 17,
+	line_height = 1.2,
 	window_padding = {
 		left = 48,
 		right = 48,
