@@ -47,23 +47,6 @@ return {
       },
     },
   },
-  {
-    "stevearc/conform.nvim",
-    opts = {
-      formatters_by_ft = {
-        elixir = { "rustywind" },
-        heex = { "rustywind" },
-      },
-    },
-  },
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "rustywind",
-      },
-    },
-  },
   -- Markdown
   {
     "mfussenegger/nvim-lint",
