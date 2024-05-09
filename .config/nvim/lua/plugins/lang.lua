@@ -22,18 +22,34 @@ return {
     end,
   },
   {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        lexical = {
-          filetypes = { "elixir", "eelixir", "heex" },
-          cmd = { "lexical" },
-          root_dir = function(fname)
-            return require("lspconfig").util.root_pattern("mix.exs", ".git")(fname) or vim.loop.os_homedir()
-          end,
-        },
-      },
+    "elixir-tools/elixir-tools.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
     },
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      local elixir = require("elixir")
+
+      elixir.setup({
+        nextls = {
+          enable = true,
+          spitfire = true,
+          init_options = {
+            experimental = {
+              completions = {
+                enable = true,
+              },
+            },
+          },
+        },
+        elixirls = {
+          enable = false,
+        },
+        credo = {
+          enable = false,
+        },
+      })
+    end,
   },
   {
     "nvim-neotest/neotest",

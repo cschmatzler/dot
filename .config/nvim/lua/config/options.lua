@@ -9,3 +9,4 @@ opt.textwidth = 120
 opt.colorcolumn = "121"
 opt.expandtab = true
 opt.shiftwidth = 2
+opt.swapfile = false
