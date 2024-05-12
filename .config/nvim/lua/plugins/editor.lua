@@ -1,7 +1,7 @@
 return {
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
-  { "echasnovski/mini.pairs",      enabled = false },
-  { "echasnovski/mini.comment",    enabled = false },
+  { "echasnovski/mini.pairs", enabled = false },
+  { "echasnovski/mini.comment", enabled = false },
   {
     "stevearc/oil.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -25,5 +25,10 @@ return {
         desc = "Undotree",
       },
     },
+  },
+  {
+    "mhanberg/output-panel.nvim",
+    event = "VeryLazy",
+    opts = {},
   },
 }
