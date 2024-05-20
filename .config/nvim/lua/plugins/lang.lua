@@ -1,15 +1,4 @@
 return {
-  -- HTML
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        emmet_language_server = {
-          filetypes = { "elixir", "heex" },
-        },
-      },
-    },
-  },
   -- Elixir
   {
     "nvim-treesitter/nvim-treesitter",
