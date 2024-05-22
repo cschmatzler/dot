@@ -11,8 +11,8 @@ IMAPStore fastmail-remote
   Account fastmail
 
 MaildirStore fastmail-local
-  Path ~/.mail/fastmail/
-  Inbox ~/.mail/fastmail/Inbox
+  Path ~/Mail/fastmail/
+  Inbox ~/Mail/fastmail/Inbox
   Subfolders Verbatim
   Trash Trash
 
