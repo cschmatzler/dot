@@ -4,4 +4,4 @@ TARGET=$(fd -t d --exact-depth 1 . $HOME/Development/personal $HOME/Development/
 	sed "s~$HOME/Development/~~" |
 	fzf --prompt "project > ")
 
-wezterm cli spawn --cwd $HOME/$TARGET
+wezterm cli spawn --cwd $HOME/Development/$TARGET
