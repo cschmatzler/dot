@@ -13,7 +13,7 @@ return {
 	window_padding = {
 		left = 48,
 		right = 48,
-		bottom = 0,
+		bottom = 12,
 		top = 0,
 	},
 	use_fancy_tab_bar = false,
