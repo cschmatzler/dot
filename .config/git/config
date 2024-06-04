@@ -63,5 +63,5 @@
 [rerere]
 	enabled = true
 
-[includeIf "gitdir:~/dev/work/"]
+[includeIf "gitdir:~/Development/work/"]
   path = "~/.config/git/work.config"
