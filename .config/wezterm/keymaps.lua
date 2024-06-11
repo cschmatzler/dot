@@ -19,5 +19,4 @@ return {
 			args = { "/opt/homebrew/bin/fish", "-l", "-c ~/.scripts/open-project" },
 		}),
 	},
-	{ key = "p", mods = "CTRL|SHIFT", action = action.ActivateCommandPalette },
 }
