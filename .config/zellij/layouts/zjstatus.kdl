@@ -14,11 +14,11 @@ layout {
             border_format   "#[fg=#bcc0cc]{char}"
             border_position "top"
 
-            mode_locked "#[fg=#dce0e8,bg=#e64553,bold] LOCKED "
-            mode_normal "#[fg=#dce0e8,bg=#1e66f5,bold] NORMAL "
-            mode_resize "#[fg=#dce0e8,bg=#179299,bold] RESIZE "
-            mode_pane   "#[fg=#dce0e8,bg=#ea76cb,bold] PANE "
-            mode_tab    "#[fg=#dce0e8,bg=#8839ef,bold] TAB "
+            mode_locked "#[fg=#dce0e8,bg=#e64553,bold] LOCKED #[fg=#e64553]"
+            mode_normal "#[fg=#dce0e8,bg=#1e66f5,bold] NORMAL #[fg=#1e66f5]"
+            mode_resize "#[fg=#dce0e8,bg=#179299,bold] RESIZE #[fg=#179299]"
+            mode_pane   "#[fg=#dce0e8,bg=#ea76cb,bold] PANE #[fg=#ea76cb]"
+            mode_tab    "#[fg=#dce0e8,bg=#8839ef,bold] TAB #[fg=#8839ef]"
 
             tab_normal   "#[fg=#1e66f5] {name} "
             tab_active   "#[fg=#8839ef,bold] {name} "
