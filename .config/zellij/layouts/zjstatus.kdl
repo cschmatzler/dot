@@ -3,7 +3,7 @@ layout {
         children
     }
     pane size=2 borderless=true {
-        plugin location="file:$HOME/.config/zellij/plugins/zjstatus.wasm" {
+        plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
             format_left   "{mode} #[fg=#1e66f5,bold]{session}"
             format_center "{tabs}"
             format_right  "{datetime}"
