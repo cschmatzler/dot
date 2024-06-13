@@ -9,7 +9,6 @@ size = 16
 normal = { family = "Iosevka Nerd Font", style = "Regular" }
 
 [window]
-decorations = "None"
 option_as_alt = "Both"
 startup_mode = "Maximized"
 
