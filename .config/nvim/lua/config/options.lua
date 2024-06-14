@@ -10,3 +10,4 @@ opt.colorcolumn = "141"
 opt.expandtab = true
 opt.shiftwidth = 2
 opt.swapfile = false
+opt.conceallevel = 0
