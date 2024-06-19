@@ -79,7 +79,8 @@ function bootstrap --description 'Bootstrap a new machine'
     defaults write com.apple.dock mru-spaces -bool false
     defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
     defaults write com.apple.ActivityMonitor ShowCategory -int 0
-    defaults write -g AppleFontSmoothing -int 0
+    defaults write org.alacritty AppleFontSmoothing -int 0
+    defaults -currentHost write -g AppleFontSmoothing -int 0
     killall Finder
     killall Dock
 end
