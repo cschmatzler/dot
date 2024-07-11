@@ -45,16 +45,6 @@ return {
       },
     },
   },
-  -- JavaScript
-  {
-
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        biome = {},
-      },
-    },
-  },
   -- KDL
   {
     "nvim-treesitter/nvim-treesitter",
