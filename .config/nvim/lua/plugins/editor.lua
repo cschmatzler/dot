@@ -1,7 +1,5 @@
 return {
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
-  { "echasnovski/mini.pairs", enabled = false },
-  { "echasnovski/mini.comment", enabled = false },
   {
     "stevearc/oil.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
