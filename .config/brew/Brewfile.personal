@@ -5,9 +5,8 @@ cask "1password-cli"
 cask "affinity-photo"
 cask "busycontacts"
 cask "daisydisk"
-cask "linear-linear"
 cask "plex"
-cask "postman"
+cask "spark"
 cask "tailscale"
 
 # CLI Tools
