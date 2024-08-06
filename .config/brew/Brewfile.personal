@@ -1,12 +1,13 @@
 tap "planetscale/tap"
 
 # Applications
+cask "bruno"
+cask "mindmac"
 cask "1password-cli"
 cask "affinity-photo"
 cask "busycontacts"
 cask "daisydisk"
 cask "plex"
-cask "readdle-spark"
 cask "tailscale"
 
 # CLI Tools
