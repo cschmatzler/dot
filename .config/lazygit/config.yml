@@ -35,3 +35,6 @@ customCommands:
     command: 'gh browse "{{.SelectedLocalCommit.Sha}}"'
     context: "commits"
 notARepository: skip
+refresher:
+  refreshInterval: 5
+  fetchInterval: 3600
