@@ -1,0 +1,53 @@
+{
+  "theme": "Catppuccin Latte",
+  "ui_font_family": "Iosevka Nerd Font",
+  "ui_font_size": 16,
+  "buffer_font_family": "Iosevka Nerd Font",
+  "buffer_font_size": 15,
+  "buffer_line_height": "standard",
+  "buffer_font_features": { "calt": false },
+  "cursor_blink": false,
+  "relative_line_numbers": true,
+  "vertical_scroll_margin": 0,
+  "tab_bar": { "show": false },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "terminal": {
+    "shell": {
+      "program": "/opt/homebrew/bin/fish"
+    },
+    "toolbar": {
+      "title": false
+    }
+  },
+  "scrollbar": { "show": "never" },
+  "project_panel": { "dock": "right" },
+  "vim_mode": true,
+  "git": {
+    "inline_blame": { "enabled": false }
+  },
+  "features": {
+    "inline_completion_provider": "supermaven"
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "version": "2"
+  },
+  "languages": {
+    "Elixir": {
+      "language_servers": ["lexical", "!elixir-ls", "!next-ls"]
+    },
+    "HEEX": {
+      "language_servers": ["lexical", "!elixir-ls", "!next-ls"]
+    }
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  }
+}

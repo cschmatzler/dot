@@ -11,6 +11,7 @@ cask "orbstack"
 cask "raycast"
 cask "setapp"
 cask "shortcat"
+cask "zed"
 mas "Yubico Authenticator", id: 1497506650
 
 # Fonts
@@ -54,5 +55,4 @@ brew "sd"
 brew "starship"
 brew "wget"
 brew "yadm"
-brew "zellij"
 brew "zoxide"

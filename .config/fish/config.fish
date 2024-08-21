@@ -13,22 +13,8 @@ if status is-interactive
     set fish_greeting
     fish_vi_key_bindings
 
-    # fish_config theme choose "Catppuccin Latte"
-
     starship init fish | source
     zoxide init fish --hook prompt | source
     atuin init fish --disable-up-arrow --disable-ctrl-r | source
     mise activate fish | source
-
-    if not set -q ZELLIJ
-        if test "$ZELLIJ_AUTO_ATTACH" = true
-            zellij attach -c
-        else
-            zellij
-        end
-
-        if test "$ZELLIJ_AUTO_EXIT" = true
-            kill $fish_pid
-        end
-    end
 end
