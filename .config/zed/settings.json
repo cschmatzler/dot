@@ -1,14 +1,15 @@
 {
-  "theme": "Catppuccin Latte",
-  "ui_font_family": "Iosevka Nerd Font",
+  "theme": "Catppuccin Latte - No Italics",
+  "ui_font_family": "CommitMono",
   "ui_font_size": 16,
-  "buffer_font_family": "Iosevka Nerd Font",
-  "buffer_font_size": 15,
+  "buffer_font_family": "CommitMono",
+  "buffer_font_size": 14,
   "buffer_line_height": "standard",
   "buffer_font_features": { "calt": false },
   "cursor_blink": false,
   "relative_line_numbers": true,
   "vertical_scroll_margin": 0,
+  "format_on_save": "off",
   "tab_bar": { "show": false },
   "toolbar": {
     "breadcrumbs": false,
@@ -28,6 +29,9 @@
   "git": {
     "inline_blame": { "enabled": false }
   },
+  "inlay_hints": {
+    "enabled": true
+  },
   "features": {
     "inline_completion_provider": "supermaven"
   },
@@ -40,10 +44,34 @@
   },
   "languages": {
     "Elixir": {
-      "language_servers": ["lexical", "!elixir-ls", "!next-ls"]
+      "language_servers": ["lexical", "!elixir-ls", "!next-ls"],
+      "format_on_save": {
+        "external": {
+          "command": "mix",
+          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
+        }
+      }
     },
-    "HEEX": {
-      "language_servers": ["lexical", "!elixir-ls", "!next-ls"]
+    "TypeScript": {
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      }
+    },
+    "TSX": {
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      }
+    }
+  },
+  "lsp": {
+    "elixir-ls": {
+      "settings": {
+        "dialyzerEnabled": false
+      }
     }
   },
   "telemetry": {
