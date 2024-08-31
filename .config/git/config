@@ -1,7 +1,7 @@
 [user]
   name = Christoph Schmatzler
   email = christoph@medium.place
-  signingKey = /Users/christoph/.ssh/yubikey-792
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOoTwh9PyFzN7YRmmPrEOyAO92NxlgqkORVO7rn5EKH1
 
 [core]
   editor = nvim
@@ -15,6 +15,9 @@
 
 [gpg]
   format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [fetch]
   prune = true
