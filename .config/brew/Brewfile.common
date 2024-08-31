@@ -15,9 +15,8 @@ cask "zed"
 mas "Yubico Authenticator", id: 1497506650
 
 # Fonts
+cask "font-commit-mono"
 cask "font-iosevka-nerd-font"
-cask "font-fira-code-nerd-font"
-cask "font-jetbrains-mono-nerd-font"
 
 brew "aerc"
 brew "atuin"

@@ -8,6 +8,8 @@ if status is-interactive && ! functions --query fisher
     curl --silent --location https://git.io/fisher | source && fisher install jorgebucaran/fisher
 end
 
+fish_config theme save "Catppuccin Macchiato"
+
 if status is-interactive
     set -U FZF_COMPLETE 0
     set fish_greeting
