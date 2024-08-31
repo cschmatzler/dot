@@ -1,6 +1,7 @@
 return {
   {
     "hrsh7th/nvim-cmp",
+    enabled = false,
     dependencies = {
       "onsails/lspkind-nvim",
     },
@@ -10,16 +11,8 @@ return {
       opts.mapping = cmp.mapping.preset.insert({
         ["<C-y>"] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
       })
+
+      table.insert(opts.sources, { name = "supermaven" })
     end,
-  },
-  {
-    "supermaven-inc/supermaven-nvim",
-    opts = {
-      keymaps = {
-        accept_suggestion = "<C-t>",
-        clear_suggestion = "<C-]>",
-        accept_word = "<C-j>",
-      },
-    },
   },
 }

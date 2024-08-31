@@ -52,5 +52,4 @@ return {
       opts.sections.lualine_z = {}
     end,
   },
-  { "tris203/precognition.nvim", opts = { showBlankVirtLine = false } },
 }

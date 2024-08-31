@@ -8,7 +8,8 @@ if status is-interactive && ! functions --query fisher
     curl --silent --location https://git.io/fisher | source && fisher install jorgebucaran/fisher
 end
 
-fish_config theme save "Catppuccin Macchiato"
+set -gx ZELLIJ_AUTO_ATTACH true
+set -gx ZELLIJ_AUTO_EXIT true
 
 if status is-interactive
     set -U FZF_COMPLETE 0
@@ -19,4 +20,5 @@ if status is-interactive
     zoxide init fish --hook prompt | source
     atuin init fish --disable-up-arrow --disable-ctrl-r | source
     mise activate fish --shims | source
+    eval (zellij setup --generate-auto-start fish | string collect)
 end
