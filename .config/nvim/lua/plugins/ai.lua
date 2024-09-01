@@ -35,6 +35,10 @@ return {
     },
     event = "VeryLazy",
     lazy = false,
-    opts = {},
+    opts = {
+      windows = {
+        width = 36.5,
+      },
+    },
   },
 }
