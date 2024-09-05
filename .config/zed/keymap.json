@@ -1,8 +1,0 @@
-[
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      "ctrl-y": "editor::ConfirmCompletion"
-    }
-  }
-]
