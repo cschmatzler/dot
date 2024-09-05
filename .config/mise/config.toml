@@ -3,7 +3,7 @@ lts-hydrogen = "18"
 
 [tools]
 node = "22"
-rust = "1.75.0"
+rust = "1.80.1"
 
 [env]
 _.file = ".env"

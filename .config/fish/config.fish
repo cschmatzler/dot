@@ -20,5 +20,4 @@ if status is-interactive
     zoxide init fish --hook prompt | source
     atuin init fish --disable-up-arrow --disable-ctrl-r | source
     mise activate fish --shims | source
-    eval (zellij setup --generate-auto-start fish | string collect)
 end

@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-TARGET=$(fd -t d --exact-depth 1 . $HOME/Development/personal $HOME/Development/work |
-	sed "s~$HOME/Development/~~" |
-	fzf --prompt "project > ")
-
-zellij run -i -- /opt/homebrew/bin/fish -c "cd $HOME/Development/$TARGET; fish"
