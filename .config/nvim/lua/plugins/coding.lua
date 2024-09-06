@@ -1,6 +1,7 @@
 return {
   {
     "hrsh7th/nvim-cmp",
+    event = "VeryLazy",
     dependencies = {
       "onsails/lspkind-nvim",
       "supermaven-inc/supermaven-nvim",

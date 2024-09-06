@@ -1,6 +1,7 @@
 return {
   {
     "supermaven-inc/supermaven-nvim",
+    event = "VeryLazy",
     opts = {
       keymaps = {
         accept_suggestion = "<Tab>",
@@ -40,7 +41,6 @@ return {
       },
     },
     event = "VeryLazy",
-    lazy = false,
     opts = {
       windows = {
         width = 36.5,
