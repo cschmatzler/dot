@@ -3,7 +3,7 @@ return {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "onsails/lspkind-nvim",
-      "supermaven/supermaven-nvim",
+      "supermaven-inc/supermaven-nvim",
     },
     opts = function(_, opts)
       local cmp = require("cmp")
