@@ -4,14 +4,13 @@ tap "noborus/tap"
 
 # Applications
 cask "1password"
-cask "alacritty"
 cask "arc"
+cask "kitty"
 cask "lunar"
 cask "orbstack"
 cask "raycast"
 cask "setapp"
 cask "shortcat"
-cask "zed"
 mas "Yubico Authenticator", id: 1497506650
 
 # Fonts
