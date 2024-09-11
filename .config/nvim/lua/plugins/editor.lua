@@ -11,6 +11,9 @@ return {
       experimental_watch_for_changes = true,
       view_options = {
         show_hidden = true,
+        sort = {
+          { "name", "asc" },
+        },
       },
     },
   },
