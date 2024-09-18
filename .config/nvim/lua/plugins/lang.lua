@@ -36,17 +36,6 @@ return {
       },
     },
   },
-  -- UnoCSS
-  {
-    {
-      "neovim/nvim-lspconfig",
-      opts = {
-        servers = {
-          unocss = {},
-        },
-      },
-    },
-  },
   -- Markdown
   {
     "mfussenegger/nvim-lint",
@@ -55,14 +44,5 @@ return {
         markdown = {},
       },
     },
-  },
-  -- KDL
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = function(_, opts)
-      vim.list_extend(opts.ensure_installed, {
-        "kdl",
-      })
-    end,
   },
 }
