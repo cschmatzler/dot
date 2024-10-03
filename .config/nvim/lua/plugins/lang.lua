@@ -1,4 +1,6 @@
 return {
+  -- Ruby
+  {},
   -- Elixir
   {
     "nvim-treesitter/nvim-treesitter",
