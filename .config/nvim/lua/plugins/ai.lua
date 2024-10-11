@@ -42,6 +42,9 @@ return {
     },
     event = "VeryLazy",
     opts = {
+      hints = {
+        enabled = false,
+      },
       windows = {
         width = 36.5,
       },
