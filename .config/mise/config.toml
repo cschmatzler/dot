@@ -5,6 +5,8 @@ lts-hydrogen = "18"
 node = "22"
 rust = "1.80.1"
 ruby = "3.3.5"
+elixir = "1.17.3-otp-27"
+erlang = "27.1.1"
 
 [env]
 _.file = ".env"
