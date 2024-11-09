@@ -17,9 +17,6 @@ alias tf terraform
 alias v nvim
 alias vim nvim
 
-abbr -a -g ta "task app:"
-abbr -a -g tp "task platform:"
-
 abbr -a -g c clear
 
 abbr -a -g dcu "docker compose up -d"

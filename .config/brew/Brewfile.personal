@@ -7,5 +7,6 @@ cask "daisydisk"
 cask "plex"
 cask "tailscale"
 
-# CLI Tools
+# Utilities
 brew "hcloud"
+brew "flyctl"

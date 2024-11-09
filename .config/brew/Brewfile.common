@@ -4,7 +4,6 @@ tap "noborus/tap"
 
 # Applications
 cask "1password"
-cask "arc"
 cask "kitty"
 cask "lunar"
 cask "orbstack"
@@ -15,9 +14,8 @@ mas "Yubico Authenticator", id: 1497506650
 
 # Fonts
 cask "font-commit-mono-nerd-font"
-cask "font-iosevka-nerd-font"
 
-brew "aerc"
+# Utilities
 brew "atuin"
 brew "bat"
 brew "docker"
@@ -35,7 +33,6 @@ brew "glow"
 brew "go-task"
 brew "gsed"
 brew "httpie"
-brew "isync"
 brew "jq"
 brew "k9s"
 brew "lazydocker"
@@ -43,10 +40,8 @@ brew "lazygit"
 brew "libyaml"
 brew "mas"
 brew "mise"
-brew "neovim", args: ["HEAD"]
-brew "nnn"
+brew "neovim"
 brew "noborus/tap/ov"
-brew "notmuch"
 brew "openssh"
 brew "ripgrep"
 brew "sd"
