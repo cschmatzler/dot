@@ -13,6 +13,11 @@ cask "setapp"
 cask "shortcat"
 mas "Yubico Authenticator", id: 1497506650
 
+# Safari Extensions
+mas "1Password for Safari", id: 1569813296
+mas "Super Agent", id: 1568262835
+mas "Wipr", id: 1320666476
+
 # Fonts
 cask "font-commit-mono-nerd-font"
 
