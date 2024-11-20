@@ -61,4 +61,13 @@ return {
       opts.sections.lualine_z = {}
     end,
   },
+  {
+    "zk-org/zk-nvim",
+    event = "VeryLazy",
+    config = function()
+      require("zk").setup({
+        picker = "telescope",
+      })
+    end,
+  },
 }
